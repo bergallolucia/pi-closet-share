@@ -1,11 +1,19 @@
 import { View, Text, TextInput, Pressable, StyleSheet } from "react-native";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { auth } from "../firebase/config";
 
 function Login(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        props.navigation.navigate("HomeMenu");
+      }
+    });
+  }, []);
 
   const login = () => {
     auth.signInWithEmailAndPassword(email, password)
@@ -37,15 +45,22 @@ function Login(props) {
         value={password}
       />
 
-      {error !== "" ? 
-      <Text style={styles.error}> {error} </Text> 
-      : null}
+      {error !== "" ?
+        <Text style={styles.error}>{error}</Text>
+        :
+        null
+      }
 
-      <Pressable style={styles.boton} onPress={login}>
-        <Text style={styles.textoBoton}> Ingresar </Text>
+      <Pressable
+        style={styles.boton}
+        onPress={login}
+      >
+        <Text style={styles.textoBoton}>Ingresar</Text>
       </Pressable>
 
-      <Pressable onPress={() => props.navigation.navigate("Register")}>
+      <Pressable
+        onPress={() => props.navigation.navigate("Register")}
+      >
         <Text style={styles.link}>¿No tenés cuenta? Registrate</Text>
       </Pressable>
     </View>
