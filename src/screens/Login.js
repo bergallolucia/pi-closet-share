@@ -52,6 +52,46 @@ function Login(props) {
   );
 }
 
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#d78282",
+    justifyContent: "center",
+    padding: 20
+  },
+  titulo: {
+    fontSize: 30,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 20
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#e8aaaa",
+    padding: 10,
+    marginBottom: 10,
+    borderRadius: 6
+  },
+  boton: {
+    backgroundColor: "#000000",
+    padding: 12,
+    borderRadius: 6,
+    alignItems: "center",
+    marginTop: 10
+  },
+  textoBoton: {
+    color: "#d78282"
+  },
+  link: {
+    marginTop: 15,
+    textAlign: "center",
+    color: "black"
+  },
+  error: {
+    color: "red",
+    marginBottom: 10,
+    textAlign: "center"
+  }
+});
 
 export default Login;
