@@ -18,7 +18,7 @@ function Register(props) {
                 db.collection("users")
                     .add({
                         email: email,
-                        username: userName,
+                        userName: userName,
                         createdAt: Date.now()
                     })
 
