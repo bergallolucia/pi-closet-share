@@ -16,14 +16,14 @@ function HomeMenu() {
                 options={{
                     tabBarIcon: () => <FontAwesome name="home" size={24} color="#6F4E37" /> 
                 }}
-            />,
+            />
             <Tab.Screen
                 name="NewPost"
                 component={NewPost}
                 options={{
                     tabBarIcon: () => <FontAwesome name="plus-square" size={24} color="#6F4E37" /> 
                 }}
-            />,
+            />
             <Tab.Screen
                 name="Profile"
                 component={Profile}

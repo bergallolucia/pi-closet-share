@@ -118,14 +118,14 @@ const styles = StyleSheet.create({
 
     input: {
         borderWidth: 1,
-        borderColor: "#ccc",
+        borderColor: "#6F4E37",
         padding: 10,
         marginBottom: 10,
         borderRadius: 5
     },
 
     boton: {
-        backgroundColor: "#ADD8E6",
+        backgroundColor: "#6F4E37",
         padding: 12,
         borderRadius: 5,
         alignItems: "center",
