@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
     }, 
     input: {
         borderWidth: 1, 
-        borderColor: "#ccc", 
+        borderColor: "#6F4E37", 
         padding: 10, 
         marginBottom: 20
     }, 
     boton: {
-        backgroundColor: "#FCF9CF", 
+        backgroundColor: "#6F4E37", 
         padding: 12, 
         alignItems: "center", 
         borderRadius: 4
