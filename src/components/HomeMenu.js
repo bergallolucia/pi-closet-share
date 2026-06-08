@@ -3,9 +3,11 @@ import { FontAwesome } from "@expo/vector-icons";
 
 import Home from "../screens/Home"; 
 import NewPost from "../screens/NewPost"; 
-import Profile from "../screens/Profile"; 
+import Profile from "../screens/Profile";
+import Comments from "../screens/Comments"; 
 
 const Tab = createBottomTabNavigator(); 
+const Stack = createNativeStackNavigator(); 
 
 function HomeMenu() {
     return (

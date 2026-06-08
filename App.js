@@ -5,7 +5,6 @@ import { StyleSheet } from 'react-native';
 import Login from "./src/screens/Login"; 
 import Register from "./src/screens/Register"; 
 import HomeMenu from "./src/components/HomeMenu"; 
-import Comments from "./src/screens/Comments"; 
 
 const Stack = createNativeStackNavigator(); 
 

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { db } from "../firebase/config";
 import Post from "../components/Post";
 
-function Home() {
+function Home(props) {
 
     const [posts, setPosts] = useState([]);
 
@@ -38,6 +38,7 @@ function Home() {
                     <Post
                         data={item.data}
                         id={item.id}
+                        navigation={props.navigation}
                     />
                 }
 
