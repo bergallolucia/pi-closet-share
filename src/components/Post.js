@@ -20,7 +20,7 @@ function Post(props) {
 
 const styles = StyleSheet.create({
     post: {
-        backgroundColor: "white",
+        backgroundColor: "#E8DDD4",
         padding: 15,
         marginBottom: 15,
         borderRadius: 10,
@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
 
     email: {
         fontWeight: "bold",
-        marginBottom: 5
+        marginBottom: 5, 
+        fontSize: 20
     }, 
     boton: {
         backgroundColor: "#6F4E37", 
