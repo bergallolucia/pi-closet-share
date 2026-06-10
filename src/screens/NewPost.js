@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Pressable, StyleSheet } from "react-native"; 
+import { View, Text, TextInput, Pressable, StyleSheet, Image } from "react-native"; 
 import { useState } from "react"; 
 import { db, auth } from "../firebase/config"; 
 
@@ -20,6 +20,9 @@ function NewPost() {
 
     return (
         <View style={styles.container}>
+            <Image style={styles.image}
+                                           source={require('../../assets/logo.png')}
+                                            resizeMode='center'/>
             <Text style={styles.titulo}>Nuevo post</Text>
 
             <TextInput
@@ -41,7 +44,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1, 
         padding: 20, 
-        backgroundColor: "white"
+        backgroundColor: "white",
+        alignItems: "center",
     }, 
     titulo: {
         fontSize: 28, 
@@ -63,6 +67,9 @@ const styles = StyleSheet.create({
     }, 
     textoBoton: {
         color: "black"
+    },
+    image: {
+        height: 60,
     }
 }); 
 

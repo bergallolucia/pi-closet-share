@@ -1,13 +1,22 @@
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { useState, useEffect } from 'react';
 import { auth, db } from '../firebase/config';
 
 function Comments() {
-    return (
+    return ( 
         <View>
+            <Image style={StyleSheet.image}
+                   source={require('../../assets/logo.png')} 
+                   />
             <Text>Comments</Text>
         </View>
     );
 }
 
-export default Comments; 
+export default Comments;
+
+const styles = StyleSheet.create({
+    image: { 
+        height: 60,
+    },
+})

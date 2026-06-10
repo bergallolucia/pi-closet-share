@@ -1,4 +1,4 @@
-import { View, Text, Pressable, StyleSheet, FlatList } from "react-native"; 
+import { View, Text, Pressable, StyleSheet, FlatList, Image } from "react-native"; 
 import { useState, useEffect } from "react";
 import { auth, db } from "../firebase/config";
 import Post from "../components/Post";
@@ -45,6 +45,10 @@ function Profile(props) {
         return (
             <View style={styles.container}>
 
+                <Image style={styles.image}
+                                               source={require('../../assets/logo.png')}
+                                                resizeMode='center'/>
+
                 <Text style={styles.titulo}> MI PERFIL </Text>
 
                 <Text style={styles.texto}> Nombre de usuario: {userName} </Text>
@@ -78,7 +82,8 @@ const styles = StyleSheet.create({
         flex: 1, 
         backgroundColor: "white", 
         padding: 20, 
-        paddingTop: 30
+        paddingTop: 30,
+         alignItems: "center",
     }, 
     titulo: {
         fontSize: 28, 
@@ -113,6 +118,9 @@ const styles = StyleSheet.create({
         color: "white", 
         fontSize: 16, 
         fontWeight: "bold"
+    },
+    image: {
+        height: 60,
     }
 }); 
 

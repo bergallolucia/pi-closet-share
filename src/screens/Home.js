@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList, Image } from "react-native";
 import { useState, useEffect } from "react";
 import { db } from "../firebase/config";
 import Post from "../components/Post";
@@ -28,6 +28,9 @@ function Home(props) {
     return (
 
         <View style={styles.container}>
+            <Image style={styles.image}
+                               source={require('../../assets/logo.png')}
+                                resizeMode='center'/>
             <Text style={styles.titulo}>Home</Text>
 
             <FlatList
@@ -52,13 +55,18 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "white",
-        paddingTop: 30
+        paddingTop: 30,
+        alignItems: "center",
+
     },
     titulo: {
         fontSize: 30,
         fontWeight: "bold",
         textAlign: "center",
         marginBottom: 20
+    },
+    image: {
+        height: 60,
     }
 });
 
