@@ -59,9 +59,9 @@ function Login(props) {
       </Pressable>
 
       <Pressable
-        onPress={() => props.navigation.navigate("Register")}
-      >
+        onPress={() => props.navigation.navigate("Register")}>
         <Text style={styles.link}>¿No tenés cuenta? Registrate</Text>
+
       </Pressable>
     </View>
   );

@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Pressable } from "react-native";
 function Post(props) {
     return (
         <View style={styles.post}>
+
             <Text style={styles.email}>
                 {props.data.email}
             </Text>
@@ -14,6 +15,7 @@ function Post(props) {
             <Pressable style={styles.boton} onPress={() => props.navigation.navigate("Comments", {id: props.id})}>
                 <Text style={styles.textoBoton}>Comentar</Text>
             </Pressable>
+            
         </View>
     );
 }

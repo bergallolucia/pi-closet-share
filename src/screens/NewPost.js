@@ -20,9 +20,11 @@ function NewPost() {
 
     return (
         <View style={styles.container}>
+
             <Image style={styles.image}
-                                           source={require('../../assets/logo.png')}
-                                            resizeMode='center'/>
+                source={require('../../assets/logo.png')}
+                resizeMode='center'/>
+
             <Text style={styles.titulo}>Nuevo post</Text>
 
             <TextInput
@@ -61,12 +63,13 @@ const styles = StyleSheet.create({
     }, 
     boton: {
         backgroundColor: "#6F4E37", 
+        borderColor: "#6F4E37",
         padding: 12, 
         alignItems: "center", 
         borderRadius: 4
     }, 
     textoBoton: {
-        color: "black"
+        color: "white"
     },
     image: {
         height: 60,
