@@ -39,7 +39,7 @@ function Post(props) {
             </Text>
 
             <Text>
-                Likes: {likes.length}
+                ❤️ {likes.length}
             </Text>
 
             <Pressable
