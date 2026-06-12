@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 import { useState, useEffect } from 'react';
 import { auth, db } from '../firebase/config';
 
@@ -10,7 +10,7 @@ function Comments(props) {
 
     return ( 
         <View>
-            <Image style={StyleSheet.image}
+            <Image style={styles.image}
                    source={require('../../assets/logo.png')} 
             />
             <Text>Comments</Text>
